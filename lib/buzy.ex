@@ -1,6 +1,9 @@
 defmodule Buzy do
+  @external_resource readme = Path.join([__DIR__, "../README.md"])
+  @doc_readme File.read!(readme)
+
   @moduledoc """
-  Documentation for `Buzy`.
+  #{@doc_readme}
   """
 
   alias Buzy.Runner.Registration.LocalRegistry
@@ -16,7 +19,7 @@ defmodule Buzy do
            LocalRegistry.start_runner(
              runner,
              thread_id,
-             Keyword.put(opts, :subscribers, subscriber_pid)
+             Keyword.merge(opts, subscribers: subscriber_pid, thread_id: thread_id)
            ) do
       {:ok, LocalRegistry.runner_via_tuple(thread_id)}
     else

@@ -23,3 +23,7 @@ buzy-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+.envrc
+.buzy
+.cache
