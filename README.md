@@ -1,6 +1,6 @@
 # Buzy
 
-**Currently under active development**
+** 🚧 Currently under active development 🚧 **
 
 Buzy is a framework to help build applications powered by large language models (LLMs) heavily inspired by [langchain](https://www.langchain.com/langchain) and [langgraph](https://www.langchain.com/langgraph).
 
@@ -34,7 +34,7 @@ A runner is defined as a graph of nodes and edge, where "nodes" represent indivi
 **Features** 
 
 * Short term memory (stateful)
-* Long term peristance (checkpointing) *in progress*
+* Long term peristance (checkpointing) *🚧 in progress 🚧*
 * Concurent execution of nodes 
 * Subscriptions
 * Recursions lmits
